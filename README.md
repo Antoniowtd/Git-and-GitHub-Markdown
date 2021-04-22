@@ -21,6 +21,9 @@ Define the basic comands of the prompt to:
 
 -compare: 
 
+	git diff Branch1..Branch2 this comand show the diferences between branches
+
+
 -find files, folder and inside files
 
 	dir/r: find files 
