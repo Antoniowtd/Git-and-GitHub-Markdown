@@ -118,3 +118,47 @@ Your branch is up to date with 'origin/master'.
 	
 -gitflow. 
 
+# Clone repository
+git clone https://github.com/my-account/my-repo-name.git .
+
+# Create branch
+git checkout -b develop master
+
+# List branches
+git branch -a
+
+# Create develop branch in the repository
+git push --set-upstream origin develop
+
+# Initiate gitflow
+git flow init
+
+# Create characteristics
+git flow feature start create-contat-form
+
+# Commit changes
+git status
+git add -A
+git commit -m "Create contact-form.php"
+
+# Finish caracteritic
+git flow feature finish create-contat-form
+
+# Release
+git flow release start 1.0.0
+
+# Commit changes
+git status
+git add -A
+git commit -m "Add release notes"
+
+# Finish release
+git flow release finish 1.0.0
+
+# Upload changes to the develop branch
+git checkout develop
+git push
+
+# Upload changes to the master branch
+git checkout master
+git push
