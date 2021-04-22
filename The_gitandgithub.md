@@ -46,27 +46,75 @@ branch.master.merge=refs/heads/master
 
 -basic workflow commands to stage and commit 
 
+	Stage files:
+	git add "Nmae of the file"
+	git add README.md
+
+	Unstage files: You can used to un stage thigs you just stage
+	git reset HEAD "name of the file"
+	git reset HEAD README.md
+
+	Deleting files:
+	git rm "Name of the file" you use this one to remove files
+	git rm README.md
+
+	git rm -r Git&githubmarkdown you use this one to remove folder
+
+	Commit Files:
+	git commit -m "Description of what change"
 	
 
 -push to a remote repository
 
 	git push <remote> <branch>
 
--branches: create, delete, save/commit & merge 
+git push -u origin m
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 396 bytes | 396.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Antoniowtd/Git-and-GitHub-Markdown.git
+   bcc23b2..1f9d602  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+-branche: create, delete, save/commit and merge: 
 
 	With this you will create a branch:
 	git brach <branch_name>
 
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Git & Github Markdown (master)
+$ git branch test
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Git & Github Markdown (test)
+$ git branch
+  master
+* test
 
 
-	With this you will delet a branch:
+	With this you can delete a branch:
+	git branch -d "Name of the branch"
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Git & Github Markdown (master)
+$ git branch -d test
+Deleted branch test (was 1f9d602).
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Git & Github Markdown (master)
+$ git branch
+* master
+
+
+	With this you will move to a branch:
 	git checkout <branch_name>
 
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Git & Github Markdown (master)
+$ git checkout test
+Switched to branch 'test'
+M       The_gitandgithub.md
+Your branch is up to date with 'origin/master'.
 
-
-	With this you can merge the branches:
-	git merge <branch_name>
-	
 	
 -gitflow. 
 
