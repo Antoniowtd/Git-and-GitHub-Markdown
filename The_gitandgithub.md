@@ -39,19 +39,34 @@ branch.master.merge=refs/heads/master
 
 -starting a project from zero or cloning an existing repository
 
+	This will download the file in a folder named
 
+	cd folder/to/clone-into/
+	git clone https://github.com/gittower/git-crash-course.git
 
 -basic workflow commands to stage and commit 
 
-
+	
 
 -push to a remote repository
 
-
+	git push <remote> <branch>
 
 -branches: create, delete, save/commit & merge 
 
+	With this you will create a branch:
+	git brach <branch_name>
 
 
+
+	With this you will delet a branch:
+	git checkout <branch_name>
+
+
+
+	With this you can merge the branches:
+	git merge <branch_name>
+	
+	
 -gitflow. 
 
